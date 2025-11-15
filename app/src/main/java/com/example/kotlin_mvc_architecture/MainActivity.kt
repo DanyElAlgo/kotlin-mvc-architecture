@@ -50,18 +50,17 @@ class MainActivity : AppCompatActivity() {
 
         updateView()
 
-        // CONTROLADOR
         btnIncrement.setOnClickListener {
             handleIncrementClick()
         }
     }
 
-    // CONTROLADOR
+    // Solicitud al controlador por parte del usuario
     private fun handleIncrementClick() {
-        // El Controlador le pide al Modelo que cambie su estado
+        // Solicitud al modelo mediante el controlador
         counterModel.increment()
 
-        // El Controlador actualiza la Vista con el nuevo estado
+        // Solicitud a la vista mediante el controlador
         updateView()
     }
 

@@ -64,10 +64,11 @@ class MainActivity : AppCompatActivity() {
         updateView()
     }
 
-    // VISTA
+    // Actualización de la vista
     @SuppressLint("SetTextI18n")
     private fun updateView() {
-        val currentCount = counterModel.getCount()
-        tvCount.text = "Contador: $currentCount"
+//        val currentCount = counterModel.getCount()
+//        tvCount.text = "Contador: $currentCount"
+        tvCount.text = "Contador: ${counterModel.getCount()}"
     }
 }
